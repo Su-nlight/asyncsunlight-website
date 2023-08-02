@@ -11,8 +11,8 @@ const Home = (props) => {
   return (
     <div className="home-container">
       <Helmet>
-        <title>Character NFT template</title>
-        <meta property="og:title" content="Character NFT template" />
+        <title>Async_Sunlight Website</title>
+        <meta property="og:title" content="Async_Sunlight Website" />
       </Helmet>
       <header data-thq="thq-navbar" className="home-navbar">
         <span className="home-logo">
