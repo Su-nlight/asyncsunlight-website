@@ -33,6 +33,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/types": "^7.19.3",
     "react-scripts": "^5.0.1"
   }
 }
