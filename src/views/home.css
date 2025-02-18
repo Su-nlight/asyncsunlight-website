@@ -381,12 +381,6 @@
 .home-text17 {
   color: var(--dl-color-primary-primarytext);
 }
-.home-paragraph1 {
-  color: var(--dl-color-primary-primarytext);
-  font-size: 40px;
-  font-family: Verdana;
-  line-height: 60px;
-}
 .home-links {
   width: 100%;
   display: flex;
@@ -1000,14 +994,14 @@
   height: 60px;
   display: flex;
   overflow: hidden;
-  align-items: flex-start;
+  align-items: center;
   border-radius: var(--dl-radius-radius-round);
   flex-direction: column;
   background-color: #FDEA6B;
 }
 .home-avatar1 {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   object-fit: cover;
 }
 .home-main1 {
@@ -1556,6 +1550,8 @@
   flex-direction: column;
 }
 .home-card3 {
+  margin-top: 5%;
+  margin-bottom: 5%;
   display: flex;
   align-items: center;
   padding-top: var(--dl-space-space-oneandhalfunits);
@@ -1585,7 +1581,7 @@
   padding: var(--dl-space-space-oneandhalfunits);
   align-items: center;
   flex-direction: column;
-  background-color: #000000;
+  background-color: #2a272f;
 }
 .home-image21 {
   width: 240px;

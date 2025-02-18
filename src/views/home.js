@@ -36,15 +36,15 @@ const Home = (props) => {
             <a href="#collection" className="home-link01 button-clean button">
               Projects
             </a>
-            <Link to="/buddies" className="home-navlink button-clean button">
+            <Link to="/buddies#top" className="home-navlink button-clean button">
               Buddies
             </Link>
-            <Link
-              to="/under-development"
-              className="home-navlink1 button-clean button"
-            >
-              Digital Writings
-            </Link>
+            <a href='https://blogs.asyncsunlight.me' 
+              target="_blank"
+              rel="noreferrer noopener"
+              className="home-navlink1 button-clean button">
+                Blogs
+            </a>
           </nav>
         </div>
         <div data-thq="thq-navbar-btn-group" className="home-btn-group">
@@ -71,11 +71,16 @@ const Home = (props) => {
               </a>
             </button>
             <button className="social button">
+              <a
+                href='https://www.linkedin.com/in/async-sunlight/'
+                target="_blank"
+                rel="noreferrer noopener">
               <img
                 alt="image"
-                src="/Icons/twitter.svg"
+                src="/Icons/linkedin.svg"
                 className="home-image"
               />
+              </a>
             </button>
             <button className="social button">
               <a
@@ -133,21 +138,21 @@ const Home = (props) => {
               <a href="#Me" className="home-link05 button-clean button">
                 Charachter
               </a>
-              <a href="#collection" className="home-link06 button-clean button">
+              <a href="#collection" className="home-link05 button-clean button">
                 Projects
               </a>
               <Link
-                to="/under-development"
-                className="home-navlink2 button-clean button"
+                to="/buddies#top"
+                className="home-link05 button-clean button"
               >
                 Buddies
               </Link>
-              <Link
-                to="/under-development"
-                className="home-navlink3 button-clean button"
-              >
-                Digital Writings
-              </Link>
+              <a href='https://blogs.asyncsunlight.me' 
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-link05 button-clean button">
+                  Blogs
+              </a>
             </nav>
             <div className="home-container2">
               <a
@@ -208,12 +213,12 @@ const Home = (props) => {
       <section id="top" className="home-hero">
         <div className="home-heading">
           <h1 className="home-header comic">
-            <span>I am the thrill-seeker and mischief master of our gang</span>
+            <span>A dendrophile and the life of a party, when I am not attached to my screen</span>
             <br className="comic"></br>
           </h1>
           <p className="home-caption">
-            There is not much to know about me unless you call me your craziest
-            and goofiest friend.
+          Albeit an open book there are so many more sides to me that only 
+          my dearest friends came across…<br></br>let's take a deep dive into it.
           </p>
         </div>
         <div className="home-buttons">
@@ -250,20 +255,17 @@ const Home = (props) => {
                   />
                 </span>
                 <span className="home-text14">Sumit Sharma</span>
-                <br></br>
-                <br className="home-text16"></br>
-                <span className="home-text17">
-                  I have profound knowledge of I.T. stuff,  application
+                <br></br><br></br>
+                <p className="home-paragraph">
+                  I have profound knowledge of I.T. stuff, application
                   programming, user interface designing, Video and photography
                   and most importantly how to keep good friendship.
-                </span>
-                <br></br>
-              </p>
-              <p className="home-paragraph1">
-                I&apos;m a backend developer, UI/UX designer and most
-                importantly an extrovert who likes to party. Pay a visit to my
-                hometown. There you&apos;ll experience the best place to
-                experience new sense of friendship.
+                  <br></br><br></br>
+                  I&apos;m a backend developer, UI/UX designer and most
+                  importantly an extrovert who likes to party. Pay a visit to my
+                  hometown. There you&apos;ll experience the best place to
+                  experience new sense of friendship.
+                </p>
               </p>
             </div>
             <div className="home-links">
@@ -311,29 +313,22 @@ const Home = (props) => {
                   overcome these obstacles by watching movies. A film is always
                   an excellent opportunity to meet new people and to strengthen
                   relationships with old friends.
-                </span>
-                <br></br>
-                <span>
+                  <br></br><br></br>
                   Our favourite characters, superheroes, teach us life lessons.
                   They give us ideas and inspiration to do everything for the
                   better instead of just sitting around, waiting for things to
                   go their way. Films about famous personalities are the perfect
                   way to affect social behaviour positively.
-                </span>
-                <br></br>
-                <span>
+                  <br></br><br></br>
                   Films are a source of knowledge. They can help learn what’s in
                   the trend, find out more about ancient times, or fill out some
                   knowledge gaps.
-                </span>
-                <br></br>
-                <span>----- Says Times of india</span>
-                <br></br>
-                <span>
+                  <br></br><br></br>
+                  ----- Says Times of india
+                  <br></br><br></br>
                   Words indeed are not mine but the feeling is rather the same,
                   I love many of movies and also great TV shows...
                 </span>
-                <br></br>
               </p>
             </div>
             <a
@@ -379,23 +374,16 @@ const Home = (props) => {
                   forever-lasting one, For people like me who love the mountain
                   ranges and the peacefulness of those places it is like a
                   heaven.
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <br></br>
-                <span>
+                  <br></br><br></br>
                   The only problem I think persists there is the more and more
                   construction and litter taking place that seems to have taken
                   over the city. That is why there is a need of some NGOs that
                   take care with that. No hard feelings, but sometimes the
                   forest range burns due to one cigeratte thrown by tourists.
                 </span>
-                <br></br>
               </p>
             </div>
+            <div className='home-links'>
             <a
               href="https://www.instagram.com/dhauladharcleaners"
               target="_blank"
@@ -426,6 +414,7 @@ const Home = (props) => {
                 className="home-image08"
               />
             </a>
+            </div>
           </div>
         </div>
       </section>
@@ -439,7 +428,7 @@ const Home = (props) => {
         </div>
         <div className="home-list">
           <div className="home-step">
-            <span className="home-caption3">01</span>
+            <span className="home-caption1">01</span>
             <div className="home-heading04">
               <h2 className="home-header07">CBSE 10th Grade</h2>
               <p className="home-header08">
@@ -452,45 +441,39 @@ const Home = (props) => {
             </div>
           </div>
           <div className="home-step1">
-            <span className="home-caption4">02</span>
+            <span className="home-caption1">02</span>
             <div className="home-heading05">
               <h2 className="home-header09">CBSE 12th Grade</h2>
               <p className="home-header10">
-                <span>
                   Got an overall percentage of 92%. In few terms it indeed is
                   actually a nice and descent score but my many of the
                   classmates scored more than me, thus I am not the best of my
                   so called batchmates.
-                </span>
-                <br></br>
-                <span>
+                  <br></br>
                   Also, Completed both of above listed qualification from DAV
                   Noida.
-                </span>
-                <br></br>
               </p>
             </div>
           </div>
           <div className="home-step2">
-            <span className="home-caption5">03</span>
+            <span className="home-caption1">03</span>
             <div className="home-heading06">
-              <h2 className="home-header11">Got into XYZ University</h2>
+              <h2 className="home-header11">Got into AKTU University</h2>
               <p className="home-header12">
                 <span className="home-text44">
-                  This whole thing is going to happen let us wait for it though
+                  I am currently Pursuing Computer Science 
+                  Engineering from G.L. Bajaj Institute of Technology, 
+                  even though I personally am not doing very well in academics
+                  but my collegues are pretty decent.<br></br>
+                  I am trying my best to be part of the communities here yet 
+                  most of the things still works discretely. <br></br>
+                  Ending thoughts? Umm... Find your best version yourself rather to relying on your college.
                 </span>
-                <br className="home-text45"></br>
-                <br className="home-text46"></br>
-                <br className="home-text47"></br>
-                <span className="home-text48">
-                  waiting till now too... Until then let&apos;s move forward
-                </span>
-                <br></br>
               </p>
             </div>
           </div>
           <div className="home-step3">
-            <span className="home-caption6">04</span>
+            <span className="home-caption1">04</span>
             <div className="home-heading07">
               <h2 className="home-header13">Other Qualifications</h2>
               <p className="home-header14">
@@ -498,6 +481,91 @@ const Home = (props) => {
                 very qualified but it would work quite well thou...
               </p>
               <div className="home-benefits">
+              <a
+                  href="https://www.credly.com/badges/update"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="home-link15"
+                >
+                  <div className="home-item3">
+                    <img
+                      alt="Technology"
+                      src="https://img.icons8.com/clouds/48/cyber-security.png"
+                      className="home-image12"
+                    />
+                    <p className="home-header18">
+                      Career Essentials in Cybersecurity by Microsoft and LinkedIn
+                    </p>
+                  </div>
+              </a>
+              <a
+                  href="https://www.credly.com/badges/8e098956-6f6f-48d2-9519-892a226d5137"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="home-link15"
+                >
+                  <div className="home-item3">
+                    <img
+                      alt="Technology"
+                      src="https://img.icons8.com/pulsar-color/48/security-shield-green.png"
+                      className="home-image12"
+                    />
+                    <p className="home-header18">
+                      Cybersecurity Fundamentals by IBM
+                    </p>
+                  </div>
+                </a>
+                <a
+                  href="https://app.cybrary.it/courses/api/certificate/CC-6626e529-9bda-4ecb-a7e1-875d4c2eb491/view"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="home-link15"
+                >
+                  <div className="home-item3">
+                    <img
+                      alt="Technology"
+                      src="https://img.icons8.com/pulsar-color/48/security-shield-green.png"
+                      className="home-image12"
+                    />
+                    <p className="home-header18">
+                      Entry-Level Cybersecurity Training by Cybrary
+                    </p>
+                  </div>
+                </a>
+                <a
+                  href="https://www.credly.com/badges/e796f97b-93df-4d87-9438-adbb233b899f/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="home-link15"
+                >
+                  <div className="home-item3">
+                    <img
+                      alt="Technology"
+                      src="https://img.icons8.com/pulsar-color/48/security-shield-green.png"
+                      className="home-image12"
+                    />
+                    <p className="home-header18">
+                      Introduction to Cybersecurity by Cisco NetAcad
+                    </p>
+                  </div>
+                </a>
+                <a
+                  href="https://skillsoft.digitalbadges.skillsoft.com/923f163a-ffaa-436d-9ca1-8763180f76d1"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="home-link15"
+                >
+                  <div className="home-item3">
+                    <img
+                      alt="Technology"
+                      src="https://img.icons8.com/dusk/48/engineering.png"
+                      className="home-image12"
+                    />
+                    <p className="home-header18">
+                    Security for Engineering Leaders by SkillSoft
+                    </p>
+                  </div>
+                </a>
                 <a
                   href="https://www.freecodecamp.org/certification/Su-nlight/scientific-computing-with-python-v7"
                   target="_blank"
@@ -512,7 +580,7 @@ const Home = (props) => {
                       className="home-image09"
                     />
                     <p className="home-header15">
-                      Python qualification from Free Code Camp 
+                      Python qualification from Free Code Camp 
                     </p>
                   </div>
                 </a>
@@ -567,7 +635,7 @@ const Home = (props) => {
       </section>
       <section id="collection" className="home-collection">
         <div className="home-content03">
-          <span className="home-caption7">collection of Past workings</span>
+          <span className="home-caption1">collection of Past workings</span>
           <div className="home-heading08">
             <h2 className="home-header19">Past Projects on Display</h2>
             <p className="home-header20">
@@ -577,6 +645,48 @@ const Home = (props) => {
           </div>
         </div>
         <div className="home-main">
+          <a
+            href="https://github.com/shvn22k/FinerdAI"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <ProjectCard
+              Name="FinerdAI : Financial Litteracy Chatbot"
+              Image_alt="External AI Computer"
+              Image_src="https://img.icons8.com/external-itim2101-lineal-color-itim2101/200/external-ai-computer-and-laptop-itim2101-lineal-color-itim2101.png"
+              Description="GFG Finale Noida Project"
+              rootClassName="project-card-root-class-name"
+              className="home-component1"
+            ></ProjectCard>
+          </a>
+          <a
+            href="/under-development"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <ProjectCard
+              Name="Survey Paper on Data Auditing in Cloud Computing"
+              Image_alt="Business Report"
+              Image_src="https://img.icons8.com/plasticine/200/business-report.png"
+              Description="A Research Paper Presented in ICDT2025"
+              rootClassName="project-card-root-class-name2"
+              className="home-component2"
+            ></ProjectCard>
+          </a>
+          <a
+            href="https://drive.google.com/file/d/1tujgYcVyssySznbf6V-GxyXLZO6wyki5/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <ProjectCard
+              Name="Making & Implementing Secure ESP Device"
+              Image_alt="Keyboard"
+              Image_src="https://img.icons8.com/dusk/200/keyboard.png"
+              Description="Bachelor's Degree Mini Project"
+              rootClassName="project-card-root-class-name3"
+              className="home-component3"
+            ></ProjectCard>
+          </a>
           <a
             href="https://drive.google.com/file/d/1sXmIfthU3Zo1IjrWYbBqEdAimpCSgKT7/view?usp=sharing"
             target="_blank"
@@ -591,50 +701,8 @@ const Home = (props) => {
               className="home-component"
             ></ProjectCard>
           </a>
-          <a
-            href="https://drive.google.com/file/d/1-vy46ayVVtuxjvddRkkZK3rGbru1fxz4/view?usp=sharing"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <ProjectCard
-              Name="Student Data Archival &amp; Retrieval System"
-              Image_alt="API Development "
-              Image_src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/250/external-api-mobile-app-development-flaticons-lineal-color-flat-icons.png"
-              Description="High School Computer Science Project"
-              rootClassName="project-card-root-class-name"
-              className="home-component1"
-            ></ProjectCard>
-          </a>
-          <a
-            href="https://github.com/Su-nlight/energyzoids"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <ProjectCard
-              Name="Designing &amp; Making Static Social Site"
-              Image_alt="Web Page Design"
-              Image_src="https://img.icons8.com/plasticine/250/web-design.png"
-              Description="High School Team Extra Curriculum Project"
-              rootClassName="project-card-root-class-name2"
-              className="home-component2"
-            ></ProjectCard>
-          </a>
-          <a
-            href="https://drive.google.com/file/d/1P7wBrXo7UhE0G0XU5QHMaL22sT8v0XUF/view?usp=sharing"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <ProjectCard
-              Name="Making and usage of Activated Charcoal"
-              Image_alt="Half Filled Conical Flask "
-              Image_src="https://img.icons8.com/matisse/250/test-tube.png"
-              Description="High School Chemistry Project"
-              rootClassName="project-card-root-class-name3"
-              className="home-component3"
-            ></ProjectCard>
-          </a>
         </div>
-        <Link to="/projects-workings" className="home-view5 button-link button">
+        <Link to="/projects-workings#top" className="home-view5 button-link button">
           View all
         </Link>
       </section>
@@ -643,64 +711,63 @@ const Home = (props) => {
           <div className="home-card">
             <div className="home-avatar">
               <img
-                alt="students doodle"
-                src="https://img.icons8.com/dusk/64/students.png"
+                alt="Chat doodle"
+                src="https://img.icons8.com/office/64/chat.png"
                 className="home-avatar1"
               />
             </div>
             <div className="home-main1">
               <div className="home-content04">
-                <h2 className="home-header21">Story of my weird 12th class</h2>
+                <h2 className="home-header21">Anonymously send messages to me</h2>
                 <p className="home-description02">
                   <span>
-                    There were way too many dumbos, I would tell you the story
-                    of best of those.
-                  </span>
+                    You can send me message via 3CX client on the web client by clicking the url link that has been attached below.
                   <br></br>
-                  <span>
-                    Actually I think i should admit the fact that i really miss
-                    my last year of schooling now...
+                    This chat is realtime and i may not be available mostly but you can drop any number of messages you want. I will make sure to go through them.
+                    If you want me to connect back to you either you can mail me or send me your prefered ID for chat.
                   </span>
                   <br></br>
                   <br></br>
                 </p>
               </div>
-              <Link to="/under-development" className="home-learn button">
+              <a href="https://1741.3cx.cloud/asyncsunlight" target="_blank"
+                  rel="noreferrer noopener" className="home-learn button">
                 <span className="home-text55">
-                  Come read my precious part of my whole damn life
+                  3CX Live Chat to Me
                 </span>
                 <img
                   alt="image"
                   src="/Icons/arrow.svg"
                   className="home-image13"
                 />
-              </Link>
+              </a>
             </div>
           </div>
           <div className="home-card1">
             <div className="home-avatar2">
               <img
-                alt="unreal-engine"
-                src="https://img.icons8.com/ios-filled/50/000000/unreal-engine.png"
+                alt="resume"
+                src="https://img.icons8.com/glyph-neue/100/resume.png"
                 className="home-avatar3"
               />
             </div>
             <div className="home-main2">
               <div className="home-content05">
-                <h2 className="home-header22">Metaverse here we come!!!</h2>
+                <h2 className="home-header22">Interested in knowing me Professionally?</h2>
                 <p className="home-description03">
-                  Now build your virtual human for absolutely free, first scan
-                  yourself and then design yourself on Metahuman...
+                  I have attached the link to my CV so that you can check it out it may contain 
+                  the same things as my LinkedIn but this would be very refined according to 
+                  industry requirements and standards.
                 </p>
               </div>
-              <Link to="/under-development" className="home-learn1 button">
-                <span className="home-text56">Learn more</span>
+              <a href="/under-development" className="home-learn1 button">
+                <span className="home-text56">See Resume</span>
                 <img
                   alt="image"
                   src="/Icons/arrow-2.svg"
                   className="home-image14"
                 />
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -726,7 +793,7 @@ const Home = (props) => {
                   &apos;em.
                 </p>
               </div>
-              <Link to="/buddies" className="home-learn2 button">
+              <Link to="/buddies#top" className="home-learn2 button">
                 <span className="home-text57">My buddies</span>
                 <img
                   alt="Arrow"
@@ -765,7 +832,7 @@ const Home = (props) => {
                   login required illustration set and compositions, you can also
                   alter their ink (outlining color), Body filled color and the
                   background color by simply going to &apos;generator&apos; page
-                  in the main site. 
+                  in the main site. 
                   <br></br>
                   <a
                   href="https://www.opendoodles.com/"
@@ -820,7 +887,7 @@ const Home = (props) => {
                     because of the help of Github Student and also they provide
                     free content also. Also you can use &quot;Material
                     Designs&quot; for your requirements it is totally free to
-                    use and easy to integrate to your applications. 
+                    use and easy to integrate to your applications.
                   <br></br>Links to both are provided below.
                   <br></br>
                   <a
@@ -965,18 +1032,27 @@ const Home = (props) => {
             <div className="home-card3">
               <img
                 alt="Athena"
-                src="/Characters/screenshot%202023-06-03%20174318-1500w.png"
+                src="Characters\re-terminal_gohugo.png"
                 loading="eager"
                 className="home-image20"
               />
-              <span className="home-text72">Athena - By Me</span>
+              <span className="home-text72">Re - Terminal Template</span>
+            </div>
+            <div className="home-card3">
+              <img
+                alt="Athena"
+                src="Ext images\async_sunlight-blogs.png"
+                loading="eager"
+                className="home-image20"
+              />
+              <span className="home-text72">Async_Sunlight Blogs</span>
             </div>
           </div>
           <div className="home-column1">
             <div className="home-card4">
               <img
-                alt="Metahuman logo"
-                src="https://styles.redditmedia.com/t5_4aqmm0/styles/communityIcon_7m9u3p8obtu61.jpg?width=256&amp;format=pjpg&amp;v=enabled&amp;s=d22d280d0f3297eb736cc8f1db3b313f379b4dfc"
+                alt="GOHUGO logo"
+                src="https://avatars.githubusercontent.com/u/29385237"
                 loading="eager"
                 className="home-image21"
               />
@@ -986,18 +1062,17 @@ const Home = (props) => {
         <div className="home-column2">
           <div className="home-card5">
             <div className="home-content11">
-              <h2 className="home-header29">Get yours now</h2>
+              <h2 className="home-header29">Personal Blogs or Documentation Archives</h2>
               <p className="home-description09">
                 <span>
-                  MetaHuman is a complete framework that gives any creator the
-                  power to use highly realistic human characters in any way
-                  imaginable.
-                </span>
-                <br></br>
-                <span>
-                  There are free of cost preset metahuman just edit them and
-                  blend the sculptures then you are good to go on unreal engine,
-                  blender, etc.
+                  I use Hugo templates to easily convert my markdown files
+                  to the website format required. This website is very static
+                  like most of the blogging sites. 
+                  <br></br>
+                  I currently have hosted my blog website were I do post stuff
+                  (not regularly but rarely), so i would really appreciate if you
+                  wanted to post your content on my website too. Also I would be 
+                  glad to help you setup a similar website if you want.
                 </span>
                 <br></br>
                 <span>
@@ -1010,13 +1085,13 @@ const Home = (props) => {
               </p>
             </div>
             <a
-              href="https://www.unrealengine.com/en-US/metahuman"
+              href="mailto:sumitsharmakaen@gmail.com?subject=Regarding Hosting Blogs: "
               target="_blank"
               rel="noreferrer noopener"
               className="home-link21 button"
             >
               <span>
-                <span>Visit the Metahuman site</span>
+                <span>Send me your Blog hosting request</span>
                 <br></br>
               </span>
             </a>
@@ -1059,24 +1134,29 @@ const Home = (props) => {
                 href="https://github.com/Su-nlight"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="home-github2 social button"
+                className="social button"
               >
                 <svg viewBox="0 0 1024 1024" className="home-icon28">
                   <path d="M512.008 12.642c-282.738 0-512.008 229.218-512.008 511.998 0 226.214 146.704 418.132 350.136 485.836 25.586 4.738 34.992-11.11 34.992-24.632 0-12.204-0.48-52.542-0.696-95.324-142.448 30.976-172.504-60.41-172.504-60.41-23.282-59.176-56.848-74.916-56.848-74.916-46.452-31.778 3.51-31.124 3.51-31.124 51.4 3.61 78.476 52.766 78.476 52.766 45.672 78.27 119.776 55.64 149.004 42.558 4.588-33.086 17.852-55.68 32.506-68.464-113.73-12.942-233.276-56.85-233.276-253.032 0-55.898 20.004-101.574 52.76-137.428-5.316-12.9-22.854-64.972 4.952-135.5 0 0 43.006-13.752 140.84 52.49 40.836-11.348 84.636-17.036 128.154-17.234 43.502 0.198 87.336 5.886 128.256 17.234 97.734-66.244 140.656-52.49 140.656-52.49 27.872 70.528 10.35 122.6 5.036 135.5 32.82 35.856 52.694 81.532 52.694 137.428 0 196.654-119.778 239.95-233.79 252.624 18.364 15.89 34.724 47.046 34.724 94.812 0 68.508-0.596 123.644-0.596 140.508 0 13.628 9.222 29.594 35.172 24.566 203.322-67.776 349.842-259.626 349.842-485.768 0-282.78-229.234-511.998-511.992-511.998z"></path>
                 </svg>
               </a>
-              <button className="social button">
+              <a
+                href='https://www.linkedin.com/in/async-sunlight/'
+                target="_blank"
+                rel="noreferrer noopener"
+                className="social button"
+              >
                 <img
                   alt="image"
-                  src="/Icons/twitter.svg"
+                  src="/Icons/linkedin.svg"
                   className="home-image22"
                 />
-              </button>
+              </a>
               <a
                 href="https://www.discordapp.com/users/727073320557871137"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="home-discord2 social button"
+                className="social button"
               >
                 <img
                   alt="image"
@@ -1090,7 +1170,7 @@ const Home = (props) => {
             <div className="home-list1">
               <h3 className="home-heading10">Site</h3>
               <div className="home-items">
-                <Link to="/buddies" className="home-link22 button-clean button">
+                <Link to="/buddies#top" className="home-link22 button-clean button">
                   My Buddies
                 </Link>
                 <a href="#Me" className="home-link23 button-clean button">
@@ -1102,12 +1182,12 @@ const Home = (props) => {
                 >
                   Past Projects
                 </a>
-                <Link
-                  to="/under-development"
-                  className="home-link25 button-clean button"
-                >
-                  Digital Writings
-                </Link>
+                <a href='https://blogs.asyncsunlight.me' 
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="home-link25 button-clean button">
+                    Blogs
+                  </a>
                 <a href="#top" className="home-link26 button-clean button">
                   To the page top
                 </a>
@@ -1133,10 +1213,12 @@ const Home = (props) => {
                   Github
                 </a>
                 <a
-                  href="mailto:sumitsharmakaen@gmail.com?subject=Reaching out to you"
-                  className="home-link29 button-clean button"
+                  href="https://www.linkedin.com/in/async-sunlight/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="home-link30 button-clean button"
                 >
-                  Email
+                  Linkedin
                 </a>
                 <a
                   href="https://www.discordapp.com/users/727073320557871137"
@@ -1146,24 +1228,40 @@ const Home = (props) => {
                 >
                   Discord
                 </a>
+                <a
+                  href="mailto:sumitsharmakaen@gmail.com?subject=Reaching out to you"
+                  className="home-link29 button-clean button"
+                >
+                  Email
+                </a>
               </div>
             </div>
           </div>
           <div className="home-socials3">
             <a
-              href="https://twitter.com"
+              href="https://www.linkedin.com/in/async-sunlight/"
               target="_blank"
               rel="noreferrer noopener"
               className="home-twitter3 social button"
             >
               <img
                 alt="image"
-                src="/Icons/twitter.svg"
+                src="/Icons/linkedin.svg"
                 className="home-image24"
               />
             </a>
             <a
-              href="https://discord.com"
+              href="https://www.github.com/Su-nlight/"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="home-twitter3 social button"
+            >
+              <svg viewBox="0 0 1024 1024" className="home-icon28">
+                  <path d="M512.008 12.642c-282.738 0-512.008 229.218-512.008 511.998 0 226.214 146.704 418.132 350.136 485.836 25.586 4.738 34.992-11.11 34.992-24.632 0-12.204-0.48-52.542-0.696-95.324-142.448 30.976-172.504-60.41-172.504-60.41-23.282-59.176-56.848-74.916-56.848-74.916-46.452-31.778 3.51-31.124 3.51-31.124 51.4 3.61 78.476 52.766 78.476 52.766 45.672 78.27 119.776 55.64 149.004 42.558 4.588-33.086 17.852-55.68 32.506-68.464-113.73-12.942-233.276-56.85-233.276-253.032 0-55.898 20.004-101.574 52.76-137.428-5.316-12.9-22.854-64.972 4.952-135.5 0 0 43.006-13.752 140.84 52.49 40.836-11.348 84.636-17.036 128.154-17.234 43.502 0.198 87.336 5.886 128.256 17.234 97.734-66.244 140.656-52.49 140.656-52.49 27.872 70.528 10.35 122.6 5.036 135.5 32.82 35.856 52.694 81.532 52.694 137.428 0 196.654-119.778 239.95-233.79 252.624 18.364 15.89 34.724 47.046 34.724 94.812 0 68.508-0.596 123.644-0.596 140.508 0 13.628 9.222 29.594 35.172 24.566 203.322-67.776 349.842-259.626 349.842-485.768 0-282.78-229.234-511.998-511.992-511.998z"></path>
+                </svg>
+            </a>
+            <a
+              href="https://www.discordapp.com/users/727073320557871137"
               target="_blank"
               rel="noreferrer noopener"
               className="home-discord3 social button"
@@ -1177,59 +1275,59 @@ const Home = (props) => {
           </div>
         </div>
         <span className="home-copyright">
-          © 2023 Sumit Sharma (Async_Sunlight) . All Rights Reserved.
+          © 2025 Sumit Sharma (Async_Sunlight) . All Rights Reserved.
         </span>
       </footer>
       <div>
         <Script
           html={`<script>
- /*
-  Accordion - Code Embed
-  */
-  const accordionContainers = document.querySelectorAll('[data-role="accordion-container"]'); // All accordion containers
-  const accordionContents = document.querySelectorAll('[data-role="accordion-content"]'); // All accordion content
-  const accordionIconsClosed = document.querySelectorAll('[data-role="accordion-icon-closed"]'); // All accordion closed icons
-  const accordionIconsOpen = document.querySelectorAll('[data-role="accordion-icon-open"]'); // All accordion open icons
+   /* Accordion - Code Embed*/
+ (function() {
+    const accordionContainers = document.querySelectorAll('[data-role="accordion-container"]');
+    const accordionContents = document.querySelectorAll('[data-role="accordion-content"]');
+    const accordionIconsClosed = document.querySelectorAll('[data-role="accordion-icon-closed"]');
+    const accordionIconsOpen = document.querySelectorAll('[data-role="accordion-icon-open"]');
 
-  accordionContents.forEach((accordionContent) => {
-      accordionContent.style.display = "none"; //Hides all accordion contents
-  });
+    accordionContents.forEach((accordionContent) => {
+      accordionContent.style.display = "none";
+    });
 
-  accordionIconsClosed.forEach((icon) => {
-    icon.style.display = "flex"
-  })
+    accordionIconsClosed.forEach((icon) => {
+      icon.style.display = "flex"
+    });
 
-  accordionIconsOpen.forEach((icon) => {
-    icon.style.display = "none"
-  })
+    accordionIconsOpen.forEach((icon) => {
+      icon.style.display = "none"
+    });
 
-  accordionContainers.forEach((accordionContainer, index) => {
+    accordionContainers.forEach((accordionContainer, index) => {
       accordionContainer.addEventListener("click", () => {
-          if (accordionContents[index].style.display === "flex") {
-              // If the accordion is already open, close it
-              accordionContents[index].style.display = "none";
-              accordionIconsClosed[index].style.display = "flex";
-              accordionIconsOpen[index].style.display = "none"
-          } else {
-              // If the accordion is closed, open it
-              accordionContents.forEach((accordionContent) => {
-                  accordionContent.style.display = "none"; //Hides all accordion contents
-              });
+        if (accordionContents[index].style.display === "flex") {
+          // If the accordion is already open, close it
+          accordionContents[index].style.display = "none";
+          accordionIconsClosed[index].style.display = "flex";
+          accordionIconsOpen[index].style.display = "none"
+        } else {
+          // If the accordion is closed, open it
+          accordionContents.forEach((accordionContent) => {
+            accordionContent.style.display = "none";
+          });
 
-              accordionIconsClosed.forEach((accordionIcon) => {
-                  accordionIcon.style.display = "flex"; // Resets all icon transforms to 0deg (default)
-              });
+          accordionIconsClosed.forEach((accordionIcon) => {
+            accordionIcon.style.display = "flex";
+          });
 
-              accordionIconsOpen.forEach((accordionIcon) => {
-                accordionIcon.style.display = "none";
-              })
-              
-              accordionContents[index].style.display = "flex"; // Shows accordion content
-              accordionIconsClosed[index].style.display = "none"; // Rotates accordion icon 180deg
-              accordionIconsOpen[index].style.display = "flex";
-          }
+          accordionIconsOpen.forEach((accordionIcon) => {
+            accordionIcon.style.display = "none";
+          });
+          
+          accordionContents[index].style.display = "flex";
+          accordionIconsClosed[index].style.display = "none";
+          accordionIconsOpen[index].style.display = "flex";
+        }
       });
-  });
+    });
+  })();
 </script>
 `}
         ></Script>

@@ -892,6 +892,7 @@
   }
   .projects-workings-socials3 {
     display: flex;
+    justify-content: center;
   }
 }
 @media(max-width: 479px) {
@@ -932,7 +933,7 @@
   }
   .projects-workings-navlink4 {
     color: var(--dl-color-gray-white);
-    text-decoration: underline;
+    text-decoration: none;
   }
   .projects-workings-navlink5 {
     color: var(--dl-color-gray-white);

@@ -11,11 +11,8 @@ const ProjectsWorkings = (props) => {
   return (
     <div className="projects-workings-container">
       <Helmet>
-        <title>projects-workings - Character NFT template</title>
-        <meta
-          property="og:title"
-          content="projects-workings - Character NFT template"
-        />
+        <title>Async_Sunlight Website</title>
+        <meta property="og:title" content="Async_Sunlight Website" />
       </Helmet>
       <header data-thq="thq-navbar" className="projects-workings-navbar">
         <Link to="/" className="projects-workings-logo">
@@ -40,17 +37,17 @@ const ProjectsWorkings = (props) => {
               Home
             </Link>
             <Link
-              to="/buddies"
+              to="/buddies#top"
               className="projects-workings-navlink1 button-clean button"
             >
               Buddies
             </Link>
-            <Link
-              to="/under-development"
-              className="projects-workings-navlink2 button-clean button"
-            >
-              Digital Writings
-            </Link>
+            <a href='https://blogs.asyncsunlight.me' 
+              target="_blank"
+              rel="noreferrer noopener"
+              className="projects-workings-navlink2 button-clean button">
+                Blogs
+            </a>
           </nav>
         </div>
         <div
@@ -80,11 +77,16 @@ const ProjectsWorkings = (props) => {
               </a>
             </button>
             <button className="social button">
+              <a
+                href='https://www.linkedin.com/in/async-sunlight/'
+                target="_blank"
+                rel="noreferrer noopener">
               <img
                 alt="image"
-                src="/Icons/twitter.svg"
-                className="projects-workings-image"
+                src="/Icons/linkedin.svg"
+                className="home-image"
               />
+              </a>
             </button>
             <button className="social button">
               <a
@@ -153,23 +155,22 @@ const ProjectsWorkings = (props) => {
             >
               <Link
                 to="/"
-                className="projects-workings-navlink3 button-clean button"
+                className="projects-workings-navlink4 button-clean button"
               >
-                <span className="projects-workings-text06">Home</span>
-                <br></br>
+                Home
               </Link>
               <Link
-                to="/buddies"
+                to="/buddies#top"
                 className="projects-workings-navlink4 button-clean button"
               >
                 Buddies
               </Link>
-              <Link
-                to="/under-development"
-                className="projects-workings-navlink5 button-clean button"
-              >
-                Digital Writings
-              </Link>
+              <a href='https://blogs.asyncsunlight.me' 
+                target="_blank"
+                rel="noreferrer noopener"
+                className="projects-workings-navlink4 button-clean button">
+                  Blogs
+              </a>
             </nav>
             <div className="projects-workings-container2">
               <a
@@ -207,11 +208,16 @@ const ProjectsWorkings = (props) => {
                 </a>
               </button>
               <button className="social button">
-                <img
-                  alt="image"
-                  src="/Icons/twitter.svg"
-                  className="projects-workings-image2"
-                />
+                <a 
+                  href=''
+                  target='_blank'
+                  rel='noreferrer noopener'>
+                  <img
+                    alt="image"
+                    src="/Icons/linkedin.svg"
+                    className="projects-workings-image2"
+                  />
+                </a>
               </button>
               <button className="social button">
                 <a
@@ -257,7 +263,7 @@ const ProjectsWorkings = (props) => {
         <div id="features" className="projects-workings-feaures">
           <div className="projects-workings-content1">
             <Feature
-              Icon="https://img.icons8.com/external-filled-line-andi-nur-abdillah/64/external-Patent-law-and-justice-(filled-line)-filled-line-andi-nur-abdillah.png"
+              Icon="\Icons\thumbs-up.svg"
               Header="Original Work"
               Description="All the projects and report made by me or my team is a perfectly original sample created."
             ></Feature>
@@ -271,9 +277,77 @@ const ProjectsWorkings = (props) => {
       </section>
       <section id="Projects" className="projects-workings-projects">
         <div className="projects-workings-offers">
+        <div className="projects-workings-offer-container">
+            <a
+              href="/under-development"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="projects-workings-link06"
+            >
+              <Offer
+                Image="/Ext images/data-audit.jpg"
+                Heading="Data Auditing Survey Paper"
+                Subheading="Data Auditing in Cloud Computing: A Survey"
+                Description="This article explores data replication techniques in cloud storage systems, addressing performance, availability, stability, & security. Providing analysis & comparison of strategies, challenges & future research directions."
+                rootClassName="offer-root-class-name"
+                className="projects-workings-component2"
+              ></Offer>
+            </a>
+        </div>
+        <div className="projects-workings-offer-container">
+            <a
+              href="https://drive.google.com/file/d/1tujgYcVyssySznbf6V-GxyXLZO6wyki5/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="projects-workings-link06"
+            >
+              <Offer
+                Image="/Ext images/keyPass.jpg"
+                Heading="KeyESP PassKeep"
+                Subheading="Secure & Encrypted Password Management"
+                Description="I developed KeyESP PassKeep, a secure, device-based password manager utilizing encrypted storage and BLE access, demonstrating my focus on efficient, hardware-integrated security solutions."
+                rootClassName="offer-root-class-name"
+                className="projects-workings-component2"
+              ></Offer>
+            </a>
+          </div>
           <div className="projects-workings-offer-container">
             <a
-              href="https://github.com/Su-nlight/Su-nlight"
+              href="https://github.com/Su-nlight/keylogger"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="projects-workings-link06"
+            >
+              <Offer
+                Image="/Ext images/keylogger.jpg"
+                Heading="Simple Keylogger"
+                Subheading="Python Based Keylogger"
+                Description="This project involves creating keylogger software injected through an ATtiny85 microchip plugged into a USB port, capturing keystrokes from a computer. The system operates stealthily, highlighting the hidden nature of the process."
+                rootClassName="offer-root-class-name"
+                className="projects-workings-component2"
+              ></Offer>
+            </a>
+          </div>
+          <div className="projects-workings-offer-container">
+            <a
+              href="https://github.com/shvn22k/FinerdAI"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="projects-workings-link06"
+            >
+              <Offer
+                Image="/Ext images/FinerdAI.jpg"
+                Heading="FinerdAI App"
+                Subheading="Website for Financial Advice"
+                Description="FinerdAI is a chatbot built with LangChain, FastAPI, and Google's Generative AI, focused on educating users about financial literacy. It provides clear, detailed answers to finance-related questions while avoiding real-time or outdated info."
+                rootClassName="offer-root-class-name"
+                className="projects-workings-component2"
+              ></Offer>
+            </a>
+          </div>
+          <div className="projects-workings-offer-container">
+            <a
+              href="https://github.com/Su-nlight/asyncsunlight-website"
               target="_blank"
               rel="noreferrer noopener"
               className="projects-workings-link06"
@@ -315,7 +389,7 @@ const ProjectsWorkings = (props) => {
                 Image="/Ext images/pexels-tranmautritam-326514%20(1)-1500w.jpg"
                 Heading="Static Website Building"
                 Subheading="Energyzoids Event Static Site"
-                Description="We created this project for a competition of developing an event website &amp; making it socially active using social media. I developed the static site for it with the help of other team members who provided me with true and actual content."
+                Description="We created this project for a competition of developing an event website &amp; making it socially active using social media platform Namely Instagram. I developed the static site for it with the help of other team members who provided me with true and actual content."
                 className="projects-workings-component4"
               ></Offer>
             </a>
@@ -328,7 +402,7 @@ const ProjectsWorkings = (props) => {
               className="projects-workings-link09"
             >
               <Offer
-                Image="https://cdn.discordapp.com/attachments/772070695152123925/1135573104740020254/1690812365023.jpg"
+                Image="/Ext images/cms-project.jpg"
                 Heading="Class Management System"
                 Subheading="High School C.S. Project"
                 Description="The team developed a Python project with three files, two containing object-oriented functions for database and file processing, and external modules like Asyncio, FastApi, and Pickle. FastApi serves as the base, while Asyncio defines path functions. Pickle handles binary file data processing."
@@ -363,7 +437,7 @@ const ProjectsWorkings = (props) => {
                 Image="/Ext images/saumbudee-dog1-1500w.jpg"
                 Heading="Tour Guide Profession Short Report"
                 Subheading="Document based on Project"
-                Description="This report is a carefully curated study of the lifestyle of the tourist escorts of our country and the challenges they face in their day-to-day lives. The group interviewed tour guides from various dialects to understand their pandemic challenges."
+                Description="This report is a carefully curated study of the lifestyle of the tourist escorts of our northern country and the challenges they potentially face in their day-to-day lives. The group interviewed a few tour guides from various dialects to understand their pandemic challenges."
                 className="projects-workings-component7"
               ></Offer>
             </a>
@@ -379,7 +453,7 @@ const ProjectsWorkings = (props) => {
                 Image="/Ext images/pexels-julia-filirovska-7138969%20(1)-1500w.jpg"
                 Heading="Preparation of Activated Charcoal"
                 Subheading="High School Chemistry Project"
-                Description="Activated carbon is made from charcoal through a simple and cheap process. It's a porous form of carbon that's used for water and gas purification. Activated carbon is often made from waste materials like coconut husks and paper mill waste. It is usually derived from waste products such as coconut husks, waste from paper mills, etc."
+                Description="Activated carbon is made from charcoal through a simple and cheap process. It's a porous form of carbon that's used for water and gas purification. It is often made from waste materials like coconut husks & paper mill waste. It is usually derived from waste products such as coconut husks, waste from paper mills, etc."
                 className="projects-workings-component8"
               ></Offer>
             </a>
@@ -432,11 +506,17 @@ const ProjectsWorkings = (props) => {
                 </svg>
               </a>
               <button className="social button">
-                <img
-                  alt="image"
-                  src="/Icons/twitter.svg"
-                  className="projects-workings-image4"
-                />
+                <a
+                  href="https://www.linkedin.com/in/async-sunlight/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="projects-workings-discord2 social button">
+                  <img
+                    alt="image"
+                    src="/Icons/linkedin.svg"
+                    className="projects-workings-image4"
+                  />
+                </a>
               </button>
               <a
                 href="https://www.discordapp.com/users/727073320557871137"
@@ -463,17 +543,17 @@ const ProjectsWorkings = (props) => {
                   Home
                 </Link>
                 <Link
-                  to="/buddies"
+                  to="/buddies#top"
                   className="projects-workings-link14 button-clean button"
                 >
                   Buddies
                 </Link>
-                <Link
-                  to="/under-development"
-                  className="projects-workings-link15 button-clean button"
-                >
-                  Digital Writings
-                </Link>
+                <a href='https://blogs.asyncsunlight.me' 
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="projects-workings-link15 button-clean button">
+                    Blogs
+                  </a>
                 <button className="projects-workings-link16 button-clean button">
                   <a href="#top" className="projects-workings-link17">
                     <span className="projects-workings-text19">
@@ -522,19 +602,29 @@ const ProjectsWorkings = (props) => {
           </div>
           <div className="projects-workings-socials3">
             <a
-              href="https://twitter.com"
+              href="https://www.linkedin.com/in/async-sunlight/"
               target="_blank"
               rel="noreferrer noopener"
               className="projects-workings-twitter3 social button"
             >
               <img
                 alt="image"
-                src="/Icons/twitter.svg"
+                src="/Icons/linkedin.svg"
                 className="projects-workings-image6"
               />
             </a>
             <a
-              href="https://discord.com"
+              href="https://www.github.com/Su-nlight/"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="home-twitter3 social button"
+            >
+              <svg viewBox="0 0 1024 1024" className="home-icon28">
+                  <path d="M512.008 12.642c-282.738 0-512.008 229.218-512.008 511.998 0 226.214 146.704 418.132 350.136 485.836 25.586 4.738 34.992-11.11 34.992-24.632 0-12.204-0.48-52.542-0.696-95.324-142.448 30.976-172.504-60.41-172.504-60.41-23.282-59.176-56.848-74.916-56.848-74.916-46.452-31.778 3.51-31.124 3.51-31.124 51.4 3.61 78.476 52.766 78.476 52.766 45.672 78.27 119.776 55.64 149.004 42.558 4.588-33.086 17.852-55.68 32.506-68.464-113.73-12.942-233.276-56.85-233.276-253.032 0-55.898 20.004-101.574 52.76-137.428-5.316-12.9-22.854-64.972 4.952-135.5 0 0 43.006-13.752 140.84 52.49 40.836-11.348 84.636-17.036 128.154-17.234 43.502 0.198 87.336 5.886 128.256 17.234 97.734-66.244 140.656-52.49 140.656-52.49 27.872 70.528 10.35 122.6 5.036 135.5 32.82 35.856 52.694 81.532 52.694 137.428 0 196.654-119.778 239.95-233.79 252.624 18.364 15.89 34.724 47.046 34.724 94.812 0 68.508-0.596 123.644-0.596 140.508 0 13.628 9.222 29.594 35.172 24.566 203.322-67.776 349.842-259.626 349.842-485.768 0-282.78-229.234-511.998-511.992-511.998z"></path>
+                </svg>
+            </a>
+            <a
+              href="https://www.discordapp.com/users/727073320557871137"
               target="_blank"
               rel="noreferrer noopener"
               className="projects-workings-discord3 social button"
@@ -548,7 +638,7 @@ const ProjectsWorkings = (props) => {
           </div>
         </div>
         <span className="projects-workings-copyright">
-          © 2023 Sumit Sharma (Async_Sunlight) . All Rights Reserved.
+          © 2025 Sumit Sharma (Async_Sunlight) . All Rights Reserved.
         </span>
       </footer>
     </div>

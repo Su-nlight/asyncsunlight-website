@@ -12,8 +12,8 @@ const Buddies = (props) => {
   return (
     <div className="buddies-container">
       <Helmet>
-        <title>buddies - Character NFT template</title>
-        <meta property="og:title" content="buddies - Character NFT template" />
+        <title>Async_Sunlight Website</title>
+        <meta property="og:title" content="Async_Sunlight Website" />
       </Helmet>
       <header data-thq="thq-navbar" className="buddies-navbar">
         <Link to="/" className="buddies-logo">
@@ -40,12 +40,12 @@ const Buddies = (props) => {
             >
               Projects
             </Link>
-            <Link
-              to="/under-development"
-              className="buddies-navlink2 button-clean button"
-            >
-              Digital Writings
-            </Link>
+            <a href='https://blogs.asyncsunlight.me' 
+              target="_blank"
+              rel="noreferrer noopener"
+              className='buddies-navlink2 button-clean button'>
+                Blogs
+            </a>
           </nav>
         </div>
         <div data-thq="thq-navbar-btn-group" className="buddies-btn-group">
@@ -72,11 +72,16 @@ const Buddies = (props) => {
               </a>
             </button>
             <button className="social button">
+              <a
+                href='https://www.linkedin.com/in/async-sunlight/'
+                target="_blank"
+                rel="noreferrer noopener">
               <img
                 alt="image"
-                src="/Icons/twitter.svg"
-                className="buddies-image"
+                src="/Icons/linkedin.svg"
+                className="home-image"
               />
+              </a>
             </button>
             <button className="social button">
               <a
@@ -135,17 +140,17 @@ const Buddies = (props) => {
                 Home
               </Link>
               <Link
-                to="/under-development"
-                className="buddies-navlink4 button-clean button"
+                to="/projects-workings#top"
+                className="buddies-navlink3 button-clean button"
               >
-                Charachter
+                Projects
               </Link>
-              <Link
-                to="/under-development"
-                className="buddies-navlink5 button-clean button"
-              >
-                Digital Writings
-              </Link>
+              <a href='https://blogs.asyncsunlight.me' 
+                target="_blank"
+                rel="noreferrer noopener"
+                className="buddies-navlink3 button-clean button">
+                  Blogs
+              </a>
             </nav>
             <div className="buddies-container2">
               <a
@@ -180,11 +185,16 @@ const Buddies = (props) => {
                 </a>
               </button>
               <button className="social button">
-                <img
-                  alt="image"
-                  src="/Icons/twitter.svg"
-                  className="buddies-image2"
-                />
+                <a 
+                  href="https://www.linkedin.com/in/async-sunlight/"
+                  target="_blank"
+                  rel="noreferrer noopener">
+                  <img
+                    alt="image"
+                    src="/Icons/linkedin.svg"
+                    className="buddies-image2"
+                  />
+                </a>
               </button>
               <button className="social button">
                 <a
@@ -218,10 +228,10 @@ const Buddies = (props) => {
                 </p>
               </div>
               <a
-                href="mailto:sumitsharmakaen@gmail.com?subject="
+                href="https://www.linkedin.com/in/async-sunlight/"
                 className="buddies-view1 button"
               >
-                Email Me
+                Connect with Me
               </a>
             </div>
             <img
@@ -249,19 +259,20 @@ const Buddies = (props) => {
         <div className="buddies-right">
           <div className="buddies-column">
             <Testimonal
+              From="rish_1412"
+              Name="Rishabh Jain"
+              Quote='"Sumit is an exceptional friend and professional. His unwavering support, empathy, and dedication make him a true gem to have in both personal and work spheres. Highly recommend!"'
+              Avatar_alt="Rishabh Jain cute avatar"
+              Avatar_src="/Characters/cute%20avatar%20rishabh.svg"
+              link_Author="https://x.com/rish_1412"
+            ></Testimonal>
+            <Testimonal
               From="tek_knight"
               Name="Priyansh Singh"
               Quote='"Sumit is a good coder and an even better friend. He&apos;s funny, kind and always there to help his friends out. Enthusiastic about physics and electronics among other things, he is a great human being."'
               Avatar_alt="Priyansh Singh cute avatar"
               Avatar_src="/Characters/cute%20avatar%20priyansh.svg"
               link_Author="https://www.instagram.com/priyanshsingh7322/"
-            ></Testimonal>
-            <Testimonal
-              From="terrified_spirit"
-              Name="Rishabh Jain"
-              Quote='"Sumit is an exceptional friend and professional. His unwavering support, empathy, and dedication make him a true gem to have in both personal and work spheres. Highly recommend!"'
-              Avatar_alt="Rishabh Jain cute avatar"
-              Avatar_src="/Characters/cute%20avatar%20rishabh.svg"
             ></Testimonal>
             <Testimonal
               From="the_elevated_one"
@@ -271,11 +282,20 @@ const Buddies = (props) => {
               Avatar_src="/Characters/cute%20avatar%20prince.svg"
             ></Testimonal>
             <Testimonal
-              From="Rohan Sahu"
-              Name="Rohan Sahu"
-              Quote='"As a long-time friend of Sumit, I have witnessed his journey from a curious technical enthusiast to a talented developer. His website showcases not only his coding prowess but also his passion for technology and towards learning to code languages to level better than his classmates. Sumit’s dedication to refining his work, even when faced with challenges, is truly commendable."'
-              Avatar_alt="Rohan Sahu cute avatar"
-              Avatar_src="/Characters/cute%20avatar%20rohan%20sahu.svg"
+              From="k_shvn"
+              Name="Shiven Shandil"
+              Quote='"Sumit is a skilled guy, especially when it comes to  cybersecurity, with a sharp analytical mind and a knack for solving complex problems. His dedication and approachable nature make them a valuable asset in and projects."'
+              Avatar_alt="Shiven Shandil cute avatar"
+              Avatar_src="/Characters/cute%20avatar%20Shiven.svg"
+              link_Author="https://x.com/k_shvn"
+            ></Testimonal>
+            <Testimonal
+              From="Anmol_9784"
+              Name="Anmol"
+              Quote="&quot;Sumit is a very hardworking and helpful person and always does work with team work. He is always ready to help others and try to solve problems by putting his efforts. He is always ready to take on new challenges and always ready for their outcomes.&quot;"
+              Avatar_alt="Anmol cute avatar"
+              Avatar_src="/Characters/cute%20avatar%20Anmol.svg"
+              link_Author="https://x.com/Anmol_9784"
             ></Testimonal>
           </div>
           <div className="buddies-column1">
@@ -288,11 +308,12 @@ const Buddies = (props) => {
               link_Author="https://www.instagram.com/vivacious_san/"
             ></Testimonal>
             <Testimonal
-              From="akansha_2001"
+              From="akansha2001"
               Name="Akansha Jain"
               Quote='"Sumit is a hardworking individual who courageously takes on responsibilities in any field, wholeheartedly completes the tasks with dedication."'
               Avatar_alt="Akansha jain cute avatar"
               Avatar_src="/Characters/cute%20avatar%20%20akansha.svg"
+              link_Author="https://x.com/Akansha2001"
             ></Testimonal>
             <Testimonal
               From="Butter"
@@ -300,6 +321,13 @@ const Buddies = (props) => {
               Quote='"Sumit is a very consistent individual with a lot of resiliance towards a task. Along with good coding skills, he possesses good soft skills."'
               Avatar_alt="Ankit Thakur cute avatar"
               Avatar_src="/Characters/cute%20avatar%20ankit.svg"
+            ></Testimonal>
+            <Testimonal
+              From="Rohan Sahu"
+              Name="Rohan Sahu"
+              Quote='"As a long-time friend of Sumit, I have witnessed his journey from a curious technical enthusiast to a talented developer. His website showcases not only his coding prowess but also his passion for technology and towards learning to code languages to level better than his classmates. Sumit’s dedication to refining his work, even when faced with challenges, is truly commendable."'
+              Avatar_alt="Rohan Sahu cute avatar"
+              Avatar_src="/Characters/cute%20avatar%20rohan%20sahu.svg"
             ></Testimonal>
             <Testimonal
               From="visualter_in"
@@ -327,7 +355,11 @@ const Buddies = (props) => {
           </div>
         </div>
         <div className="buddies-cards-container">
-          <Link to="/under-development" className="buddies-navlink6">
+        <a
+          href="https://www.linkedin.com/in/sanjana-kumari-54a2b5306/"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="buddies-link06">
             <PersonCard
               image="/Characters/cute%20avatar%20sanjana.svg"
               Person="Sanjana"
@@ -337,7 +369,7 @@ const Buddies = (props) => {
               rootClassName="person-card-root-class-name"
               className="buddies-component08"
             ></PersonCard>
-          </Link>
+          </a>
           <a
             href="https://www.researchgate.net/publication/349710925_Image_Classification_using_Decision_Trees_with_Clustering_algorithms_PCA"
             target="_blank"
@@ -366,6 +398,41 @@ const Buddies = (props) => {
             ></PersonCard>
           </Link>
           <a
+            href="https://github.com/rish-1412"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="buddies-link09"
+          >
+            <PersonCard
+              image="/Characters/cute%20avatar%20rishabh.svg"
+              Person="Rishabh Jain"
+              Hint="Explore Profile"
+              image_alt="Rishabh Jain cute avatar"
+              description="Rishabh is a great friend who is pursuing B.Sc. (Hons.) in Statistics at Ramanujan College, Delhi University. He's proficient with data & numerical approaches and is keen for growth opportunities. His leadership qualities & spoken communication skills are a boon in handling workload in the team."
+              social_link="https://www.linkedin.com/in/rishabh-jain-b6b420286/"
+              rootClassName="person-card-root-class-name1"
+              className="buddies-component13"
+            ></PersonCard>
+          </a>
+          <a
+            href="https://github.com/shvn22k"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="buddies-link06"
+          >
+            <PersonCard
+              Hint="Explore Profile"
+              image="/Characters/cute%20avatar%20Shiven.svg"
+              Person="Shiven Shandil"
+              image_alt="Shiven Shandil cute avatar"
+              social_link="https://www.linkedin.com/in/shiven-k-58b423212/"
+              website_link="https://github.com/shvn22k"
+              description="Shiven Shandil has a vast knowledge of Machine Learning and is very professional with his work, whether done in a group or solo. He is currently pursuing Bachelor's Comupter Science (AI&ML branch). He helps his team a lot in development of applications based upon ML and python language."
+              rootClassName="person-card-root-class-name2"
+              className="buddies-component09"
+            ></PersonCard>
+          </a>
+          <a
             href="https://prince-thind.github.io/"
             target="_blank"
             rel="noreferrer noopener"
@@ -378,9 +445,42 @@ const Buddies = (props) => {
               image_alt="Prince Thind cute avatar"
               description="Prince has pursued Bachelors of technology in Computer Science Engineering and also possesses a vast knowledge of Frontend development. He possesses the ability to create both static and dynamic websites, which is a tough combination to find in young individuals."
               social_link="https://github.com/prince-thind"
-              website_link="https://prince-thind.github.io/"
               rootClassName="person-card-root-class-name4"
               className="buddies-component11"
+            ></PersonCard>
+          </a>
+          <a
+            href="https://github.com/SushantVirghla"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="buddies-link09"
+          >
+            <PersonCard
+              image="/Characters/cute%20avatar%20Sushant.svg"
+              Person="Sushant Virghla"
+              Hint="Explore Profile"
+              image_alt="Sushant cute avatar"
+              description="Sushant is passionate about & around App development, he currently is pursuing B.Tech. in CS Engineering. His desire for exploration of IT systems and developing scalable solutions are quite excellent and strong. He aims to achieve exquisite App development & UI/UX designing skills."
+              social_link="https://www.linkedin.com/in/sushant-virghla-b74435329/"
+              rootClassName="person-card-root-class-name1"
+              className="buddies-component13"
+            ></PersonCard>
+          </a>
+          <a
+            href="https://anmolcoder.netlify.app/"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="buddies-link09"
+          >
+            <PersonCard
+              image="/Characters/cute%20avatar%20Anmol.svg"
+              Person="Anmol"
+              Hint="Explore Porfolio"
+              image_alt="Anmol cute avatar"
+              description="Anmol is pursuing B.tech in IT Engineering and is very passionate about his work and solutions. He gives his heart into a project he has been assigned or chosen, moreover he has vast knowledge in developing scalable full stack websites. His dynamic approach to work is excuisite"
+              social_link="https://www.linkedin.com/in/anmol-776877294"
+              rootClassName="person-card-root-class-name1"
+              className="buddies-component13"
             ></PersonCard>
           </a>
           <a
@@ -493,13 +593,17 @@ const Buddies = (props) => {
                   <path d="M512.008 12.642c-282.738 0-512.008 229.218-512.008 511.998 0 226.214 146.704 418.132 350.136 485.836 25.586 4.738 34.992-11.11 34.992-24.632 0-12.204-0.48-52.542-0.696-95.324-142.448 30.976-172.504-60.41-172.504-60.41-23.282-59.176-56.848-74.916-56.848-74.916-46.452-31.778 3.51-31.124 3.51-31.124 51.4 3.61 78.476 52.766 78.476 52.766 45.672 78.27 119.776 55.64 149.004 42.558 4.588-33.086 17.852-55.68 32.506-68.464-113.73-12.942-233.276-56.85-233.276-253.032 0-55.898 20.004-101.574 52.76-137.428-5.316-12.9-22.854-64.972 4.952-135.5 0 0 43.006-13.752 140.84 52.49 40.836-11.348 84.636-17.036 128.154-17.234 43.502 0.198 87.336 5.886 128.256 17.234 97.734-66.244 140.656-52.49 140.656-52.49 27.872 70.528 10.35 122.6 5.036 135.5 32.82 35.856 52.694 81.532 52.694 137.428 0 196.654-119.778 239.95-233.79 252.624 18.364 15.89 34.724 47.046 34.724 94.812 0 68.508-0.596 123.644-0.596 140.508 0 13.628 9.222 29.594 35.172 24.566 203.322-67.776 349.842-259.626 349.842-485.768 0-282.78-229.234-511.998-511.992-511.998z"></path>
                 </svg>
               </a>
-              <button className="social button">
+              <a
+                href="https://www.linkedin.com/in/async-sunlight/"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="buddies-github2 social button">
                 <img
                   alt="image"
-                  src="/Icons/twitter.svg"
+                  src="/Icons/linkedin.svg"
                   className="buddies-image5"
                 />
-              </button>
+              </a>
               <a
                 href="https://www.discordapp.com/users/727073320557871137"
                 target="_blank"
@@ -522,7 +626,7 @@ const Buddies = (props) => {
                   Home
                 </Link>
                 <Link
-                  to="/under-development"
+                  to="/projects-workings#top"
                   className="buddies-link11 button-clean button"
                 >
                   <span>
@@ -537,14 +641,14 @@ const Buddies = (props) => {
                     <span>Projects</span>
                   </span>
                 </Link>
-                <Link
-                  to="/under-development"
-                  className="buddies-link12 button-clean button"
-                >
-                  Digital Writings
-                </Link>
+                <a href='https://blogs.asyncsunlight.me' 
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="buddies-link12 button-clean button">
+                    Blogs
+                </a>
                 <a href="#top" className="buddies-link13 button-clean button">
-                  Features
+                  To the Page Top
                 </a>
               </div>
             </div>
@@ -568,6 +672,14 @@ const Buddies = (props) => {
                   Github
                 </a>
                 <a
+                  href="https://www.linkedin.com/in/async-sunlight/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="buddies-link15 button-clean button"
+                >
+                  Linkedin
+                </a>
+                <a
                   href="mailto:sumitsharmakaen@gmail.com?subject=Reaching out to you"
                   className="buddies-link16 button-clean button"
                 >
@@ -586,23 +698,30 @@ const Buddies = (props) => {
           </div>
           <div className="buddies-socials3">
             <a
-              href="https://twitter.com"
+              href="https://github.com/Su-nlight"
               target="_blank"
               rel="noreferrer noopener"
-              className="buddies-twitter3 social button"
-            >
+              className="buddies-github2 social button">
+                <svg viewBox="0 0 1024 1024" className="buddies-icon12">
+                  <path d="M512.008 12.642c-282.738 0-512.008 229.218-512.008 511.998 0 226.214 146.704 418.132 350.136 485.836 25.586 4.738 34.992-11.11 34.992-24.632 0-12.204-0.48-52.542-0.696-95.324-142.448 30.976-172.504-60.41-172.504-60.41-23.282-59.176-56.848-74.916-56.848-74.916-46.452-31.778 3.51-31.124 3.51-31.124 51.4 3.61 78.476 52.766 78.476 52.766 45.672 78.27 119.776 55.64 149.004 42.558 4.588-33.086 17.852-55.68 32.506-68.464-113.73-12.942-233.276-56.85-233.276-253.032 0-55.898 20.004-101.574 52.76-137.428-5.316-12.9-22.854-64.972 4.952-135.5 0 0 43.006-13.752 140.84 52.49 40.836-11.348 84.636-17.036 128.154-17.234 43.502 0.198 87.336 5.886 128.256 17.234 97.734-66.244 140.656-52.49 140.656-52.49 27.872 70.528 10.35 122.6 5.036 135.5 32.82 35.856 52.694 81.532 52.694 137.428 0 196.654-119.778 239.95-233.79 252.624 18.364 15.89 34.724 47.046 34.724 94.812 0 68.508-0.596 123.644-0.596 140.508 0 13.628 9.222 29.594 35.172 24.566 203.322-67.776 349.842-259.626 349.842-485.768 0-282.78-229.234-511.998-511.992-511.998z"></path>
+                </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/async-sunlight/"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="home-twitter3 social button">
               <img
                 alt="image"
-                src="/Icons/twitter.svg"
-                className="buddies-image7"
+                src="/Icons/linkedin.svg"
+                className="home-image24"
               />
             </a>
             <a
-              href="https://discord.com"
+              href="https://www.discordapp.com/users/727073320557871137"
               target="_blank"
               rel="noreferrer noopener"
-              className="buddies-discord3 social button"
-            >
+              className="buddies-discord3 social button">
               <img
                 alt="image"
                 src="/Icons/discord.svg"
@@ -612,7 +731,7 @@ const Buddies = (props) => {
           </div>
         </div>
         <span className="buddies-copyright">
-          © 2023 Sumit Sharma (Async_Sunlight) . All Rights Reserved.
+          © 2025 Sumit Sharma (Async_Sunlight) . All Rights Reserved.
         </span>
       </footer>
     </div>
