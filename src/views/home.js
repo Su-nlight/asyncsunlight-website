@@ -482,7 +482,7 @@ const Home = (props) => {
               </p>
               <div className="home-benefits">
               <a
-                  href="https://www.credly.com/badges/update"
+                  href="https://www.linkedin.com/learning/certificates/f3a9810f30c726ec6922f6fe925759f8e2623cc701c1a48113dbd6be025ef878"
                   target="_blank"
                   rel="noreferrer noopener"
                   className="home-link15"
@@ -1040,7 +1040,7 @@ const Home = (props) => {
             </div>
             <div className="home-card3">
               <img
-                alt="Athena"
+                alt="Blogs Page Screenshot"
                 src="Ext images\async_sunlight-blogs.png"
                 loading="eager"
                 className="home-image20"
