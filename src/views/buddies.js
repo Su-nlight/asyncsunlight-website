@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
 import { Helmet } from 'react-helmet'
 
+import Navbar from '../components/navbar'
+import Footer from '../components/footer'
 import Testimonal from '../components/testimonal'
 import PersonCard from '../components/person-card'
 import Card from '../components/card'
@@ -15,211 +16,16 @@ const Buddies = (props) => {
         <title>Async_Sunlight Website</title>
         <meta property="og:title" content="Async_Sunlight Website" />
       </Helmet>
-      <header data-thq="thq-navbar" className="buddies-navbar">
-        <Link to="/" className="buddies-logo">
-          <span className="buddies-text">Async</span>
-          <span className="buddies-text01">_</span>
-          <span>Sunlight</span>
-        </Link>
-        <div
-          data-thq="thq-navbar-nav"
-          data-role="Nav"
-          className="buddies-desktop-menu"
-        >
-          <nav
-            data-thq="thq-navbar-nav-links"
-            data-role="Nav"
-            className="buddies-nav"
-          >
-            <Link to="/" className="buddies-navlink button-clean button">
-              Home
-            </Link>
-            <Link
-              to="/projects-workings"
-              className="buddies-navlink1 button-clean button"
-            >
-              Projects
-            </Link>
-            <a href='https://blogs.asyncsunlight.me' 
-              target="_blank"
-              rel="noreferrer noopener"
-              className='buddies-navlink2 button-clean button'>
-                Blogs
-            </a>
-          </nav>
-        </div>
-        <div data-thq="thq-navbar-btn-group" className="buddies-btn-group">
-          <div className="buddies-socials">
-            <button className="social button">
-              <a href="mailto:sumitsharmakaen@gmail.com?subject=">
-                <svg viewBox="0 0 1024 1024" className="buddies-icon">
-                  <path d="M854 256q34 0 59 26t25 60v512q0 34-25 59t-59 25h-684q-34 0-59-25t-25-59v-512q0-34 25-60t59-26h86v-256h342v170h-256v342h84v-256h428z"></path>
-                </svg>
-              </a>
-            </button>
-            <button className="social button">
-              <a
-                href="https://github.com/Su-nlight"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <svg
-                  viewBox="0 0 877.7142857142857 1024"
-                  className="buddies-icon02"
-                >
-                  <path d="M438.857 73.143c242.286 0 438.857 196.571 438.857 438.857 0 193.714-125.714 358.286-300 416.571-22.286 4-30.286-9.714-30.286-21.143 0-14.286 0.571-61.714 0.571-120.571 0-41.143-13.714-67.429-29.714-81.143 97.714-10.857 200.571-48 200.571-216.571 0-48-17.143-86.857-45.143-117.714 4.571-11.429 19.429-56-4.571-116.571-36.571-11.429-120.571 45.143-120.571 45.143-34.857-9.714-72.571-14.857-109.714-14.857s-74.857 5.143-109.714 14.857c0 0-84-56.571-120.571-45.143-24 60.571-9.143 105.143-4.571 116.571-28 30.857-45.143 69.714-45.143 117.714 0 168 102.286 205.714 200 216.571-12.571 11.429-24 30.857-28 58.857-25.143 11.429-89.143 30.857-127.429-36.571-24-41.714-67.429-45.143-67.429-45.143-42.857-0.571-2.857 26.857-2.857 26.857 28.571 13.143 48.571 64 48.571 64 25.714 78.286 148 52 148 52 0 36.571 0.571 70.857 0.571 81.714 0 11.429-8 25.143-30.286 21.143-174.286-58.286-300-222.857-300-416.571 0-242.286 196.571-438.857 438.857-438.857zM166.286 703.429c1.143-2.286-0.571-5.143-4-6.857-3.429-1.143-6.286-0.571-7.429 1.143-1.143 2.286 0.571 5.143 4 6.857 2.857 1.714 6.286 1.143 7.429-1.143zM184 722.857c2.286-1.714 1.714-5.714-1.143-9.143-2.857-2.857-6.857-4-9.143-1.714-2.286 1.714-1.714 5.714 1.143 9.143 2.857 2.857 6.857 4 9.143 1.714zM201.143 748.571c2.857-2.286 2.857-6.857 0-10.857-2.286-4-6.857-5.714-9.714-3.429-2.857 1.714-2.857 6.286 0 10.286s7.429 5.714 9.714 4zM225.143 772.571c2.286-2.286 1.143-7.429-2.286-10.857-4-4-9.143-4.571-11.429-1.714-2.857 2.286-1.714 7.429 2.286 10.857 4 4 9.143 4.571 11.429 1.714zM257.714 786.857c1.143-3.429-2.286-7.429-7.429-9.143-4.571-1.143-9.714 0.571-10.857 4s2.286 7.429 7.429 8.571c4.571 1.714 9.714 0 10.857-3.429zM293.714 789.714c0-4-4.571-6.857-9.714-6.286-5.143 0-9.143 2.857-9.143 6.286 0 4 4 6.857 9.714 6.286 5.143 0 9.143-2.857 9.143-6.286zM326.857 784c-0.571-3.429-5.143-5.714-10.286-5.143-5.143 1.143-8.571 4.571-8 8.571 0.571 3.429 5.143 5.714 10.286 4.571s8.571-4.571 8-8z"></path>
-                </svg>
-              </a>
-            </button>
-            <button className="social button">
-              <a
-                href='https://www.linkedin.com/in/async-sunlight/'
-                target="_blank"
-                rel="noreferrer noopener">
-              <img
-                alt="image"
-                src="/Icons/linkedin.svg"
-                className="home-image"
-              />
-              </a>
-            </button>
-            <button className="social button">
-              <a
-                href="https://www.discordapp.com/users/727073320557871137"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <img
-                  alt="image"
-                  src="/Icons/discord.svg"
-                  className="buddies-image1"
-                />
-              </a>
-            </button>
-          </div>
-          <a
-            href="https://www.instagram.com/async_sunlight/"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="buddies-view button"
-          >
-            Follow on Instagram
-          </a>
-        </div>
-        <div data-thq="thq-burger-menu" className="buddies-burger-menu">
-          <button className="button buddies-button">
-            <svg viewBox="0 0 1024 1024" className="buddies-icon04">
-              <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
-            </svg>
-          </button>
-        </div>
-        <div data-thq="thq-mobile-menu" className="buddies-mobile-menu">
-          <div
-            data-thq="thq-mobile-menu-nav"
-            data-role="Nav"
-            className="buddies-nav1"
-          >
-            <div className="buddies-container1">
-              <Link to="/" className="buddies-logo1">
-                <span className="buddies-text03">Async</span>
-                <span className="buddies-text04">_</span>
-                <span className="buddies-text05">Sunlight</span>
-              </Link>
-              <div data-thq="thq-close-menu" className="buddies-menu-close">
-                <svg viewBox="0 0 1024 1024" className="buddies-icon06">
-                  <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
-                </svg>
-              </div>
-            </div>
-            <nav
-              data-thq="thq-mobile-menu-nav-links"
-              data-role="Nav"
-              className="buddies-nav2"
-            >
-              <Link to="/" className="buddies-navlink3 button-clean button">
-                Home
-              </Link>
-              <Link
-                to="/projects-workings#top"
-                className="buddies-navlink3 button-clean button"
-              >
-                Projects
-              </Link>
-              <a href='https://blogs.asyncsunlight.me' 
-                target="_blank"
-                rel="noreferrer noopener"
-                className="buddies-navlink3 button-clean button">
-                  Blogs
-              </a>
-            </nav>
-            <div className="buddies-container2">
-              <a
-                href="https://www.instagram.com/async_sunlight/"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="buddies-login button"
-              >
-                Follow on instagram
-              </a>
-            </div>
-            <div className="buddies-socials1">
-              <button className="social button">
-                <a href="mailto:sumitsharmakaen@gmail.com?subject=">
-                  <svg viewBox="0 0 1024 1024" className="buddies-icon08">
-                    <path d="M854 256q34 0 59 26t25 60v512q0 34-25 59t-59 25h-684q-34 0-59-25t-25-59v-512q0-34 25-60t59-26h86v-256h342v170h-256v342h84v-256h428z"></path>
-                  </svg>
-                </a>
-              </button>
-              <button className="social button">
-                <a
-                  href="https://github.com/Su-nlight"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <svg
-                    viewBox="0 0 877.7142857142857 1024"
-                    className="buddies-icon10"
-                  >
-                    <path d="M438.857 73.143c242.286 0 438.857 196.571 438.857 438.857 0 193.714-125.714 358.286-300 416.571-22.286 4-30.286-9.714-30.286-21.143 0-14.286 0.571-61.714 0.571-120.571 0-41.143-13.714-67.429-29.714-81.143 97.714-10.857 200.571-48 200.571-216.571 0-48-17.143-86.857-45.143-117.714 4.571-11.429 19.429-56-4.571-116.571-36.571-11.429-120.571 45.143-120.571 45.143-34.857-9.714-72.571-14.857-109.714-14.857s-74.857 5.143-109.714 14.857c0 0-84-56.571-120.571-45.143-24 60.571-9.143 105.143-4.571 116.571-28 30.857-45.143 69.714-45.143 117.714 0 168 102.286 205.714 200 216.571-12.571 11.429-24 30.857-28 58.857-25.143 11.429-89.143 30.857-127.429-36.571-24-41.714-67.429-45.143-67.429-45.143-42.857-0.571-2.857 26.857-2.857 26.857 28.571 13.143 48.571 64 48.571 64 25.714 78.286 148 52 148 52 0 36.571 0.571 70.857 0.571 81.714 0 11.429-8 25.143-30.286 21.143-174.286-58.286-300-222.857-300-416.571 0-242.286 196.571-438.857 438.857-438.857zM166.286 703.429c1.143-2.286-0.571-5.143-4-6.857-3.429-1.143-6.286-0.571-7.429 1.143-1.143 2.286 0.571 5.143 4 6.857 2.857 1.714 6.286 1.143 7.429-1.143zM184 722.857c2.286-1.714 1.714-5.714-1.143-9.143-2.857-2.857-6.857-4-9.143-1.714-2.286 1.714-1.714 5.714 1.143 9.143 2.857 2.857 6.857 4 9.143 1.714zM201.143 748.571c2.857-2.286 2.857-6.857 0-10.857-2.286-4-6.857-5.714-9.714-3.429-2.857 1.714-2.857 6.286 0 10.286s7.429 5.714 9.714 4zM225.143 772.571c2.286-2.286 1.143-7.429-2.286-10.857-4-4-9.143-4.571-11.429-1.714-2.857 2.286-1.714 7.429 2.286 10.857 4 4 9.143 4.571 11.429 1.714zM257.714 786.857c1.143-3.429-2.286-7.429-7.429-9.143-4.571-1.143-9.714 0.571-10.857 4s2.286 7.429 7.429 8.571c4.571 1.714 9.714 0 10.857-3.429zM293.714 789.714c0-4-4.571-6.857-9.714-6.286-5.143 0-9.143 2.857-9.143 6.286 0 4 4 6.857 9.714 6.286 5.143 0 9.143-2.857 9.143-6.286zM326.857 784c-0.571-3.429-5.143-5.714-10.286-5.143-5.143 1.143-8.571 4.571-8 8.571 0.571 3.429 5.143 5.714 10.286 4.571s8.571-4.571 8-8z"></path>
-                  </svg>
-                </a>
-              </button>
-              <button className="social button">
-                <a 
-                  href="https://www.linkedin.com/in/async-sunlight/"
-                  target="_blank"
-                  rel="noreferrer noopener">
-                  <img
-                    alt="image"
-                    src="/Icons/linkedin.svg"
-                    className="buddies-image2"
-                  />
-                </a>
-              </button>
-              <button className="social button">
-                <a
-                  href="https://www.discordapp.com/users/727073320557871137"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <img
-                    alt="image"
-                    src="/Icons/discord.svg"
-                    className="buddies-image3"
-                  />
-                </a>
-              </button>
-            </div>
-          </div>
-        </div>
-      </header>
+      
+      <Navbar />
+      
       <section id="top" className="buddies-hero-section">
         <section className="buddies-join-us">
           <div className="buddies-content">
             <div className="buddies-main">
               <div className="buddies-heading">
                 <h2 className="buddies-header">
-                  A professional connection is what workaholic people strive
+                  A professional connection is what workaholic people strive
                   for...
                 </h2>
                 <p className="buddies-caption">
@@ -242,6 +48,7 @@ const Buddies = (props) => {
           </div>
         </section>
       </section>
+      
       <section className="buddies-testimonals">
         <div className="buddies-left">
           <span className="buddies-section section-head">Testimonials</span>
@@ -325,7 +132,7 @@ const Buddies = (props) => {
             <Testimonal
               From="Rohan Sahu"
               Name="Rohan Sahu"
-              Quote='"As a long-time friend of Sumit, I have witnessed his journey from a curious technical enthusiast to a talented developer. His website showcases not only his coding prowess but also his passion for technology and towards learning to code languages to level better than his classmates. Sumit’s dedication to refining his work, even when faced with challenges, is truly commendable."'
+              Quote="As a long-time friend of Sumit, I have witnessed his journey from a curious technical enthusiast to a talented developer. His website showcases not only his coding prowess but also his passion for technology and towards learning to code languages to level better than his classmates. Sumit's dedication to refining his work, even when faced with challenges, is truly commendable."
               Avatar_alt="Rohan Sahu cute avatar"
               Avatar_src="/Characters/cute%20avatar%20rohan%20sahu.svg"
             ></Testimonal>
@@ -344,6 +151,7 @@ const Buddies = (props) => {
           <br></br>
         </span>
       </section>
+      
       <section id="Buddies" className="buddies-collection">
         <div className="buddies-content1">
           <span className="buddies-caption1">collection of buddies</span>
@@ -518,6 +326,7 @@ const Buddies = (props) => {
           </a>
         </div>
       </section>
+      
       <section id="features" className="buddies-section1">
         <header className="buddies-header3">
           <header className="buddies-left1">
@@ -549,191 +358,8 @@ const Buddies = (props) => {
           ></Card>
         </main>
       </section>
-      <footer className="buddies-footer">
-        <div className="buddies-main1">
-          <div className="buddies-branding">
-            <div className="buddies-heading3">
-              <Link to="/" className="buddies-navlink8">
-                <h2 className="buddies-logo2">
-                  <span className="buddies-text15">Async</span>
-                  <span>_</span>
-                  <span className="buddies-text17">Sunlight</span>
-                </h2>
-              </Link>
-              <p className="buddies-caption2">
-                <span className="buddies-text18">
-                  Life is so short to regret anything, come together,
-                </span>
-                <br className="buddies-text19"></br>
-                <span className="buddies-text20">
-                  let us connect I shall always appreciate such connection.
-                </span>
-                <br className="buddies-text21"></br>
-                <br className="buddies-text22"></br>
-                <span className="buddies-text23">
-                  -----
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <span className="buddies-text24">Sumit Sharma</span>
-                <br className="buddies-text25"></br>
-              </p>
-            </div>
-            <div className="buddies-socials2">
-              <a
-                href="https://github.com/Su-nlight"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="buddies-github2 social button"
-              >
-                <svg viewBox="0 0 1024 1024" className="buddies-icon12">
-                  <path d="M512.008 12.642c-282.738 0-512.008 229.218-512.008 511.998 0 226.214 146.704 418.132 350.136 485.836 25.586 4.738 34.992-11.11 34.992-24.632 0-12.204-0.48-52.542-0.696-95.324-142.448 30.976-172.504-60.41-172.504-60.41-23.282-59.176-56.848-74.916-56.848-74.916-46.452-31.778 3.51-31.124 3.51-31.124 51.4 3.61 78.476 52.766 78.476 52.766 45.672 78.27 119.776 55.64 149.004 42.558 4.588-33.086 17.852-55.68 32.506-68.464-113.73-12.942-233.276-56.85-233.276-253.032 0-55.898 20.004-101.574 52.76-137.428-5.316-12.9-22.854-64.972 4.952-135.5 0 0 43.006-13.752 140.84 52.49 40.836-11.348 84.636-17.036 128.154-17.234 43.502 0.198 87.336 5.886 128.256 17.234 97.734-66.244 140.656-52.49 140.656-52.49 27.872 70.528 10.35 122.6 5.036 135.5 32.82 35.856 52.694 81.532 52.694 137.428 0 196.654-119.778 239.95-233.79 252.624 18.364 15.89 34.724 47.046 34.724 94.812 0 68.508-0.596 123.644-0.596 140.508 0 13.628 9.222 29.594 35.172 24.566 203.322-67.776 349.842-259.626 349.842-485.768 0-282.78-229.234-511.998-511.992-511.998z"></path>
-                </svg>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/async-sunlight/"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="buddies-github2 social button">
-                <img
-                  alt="image"
-                  src="/Icons/linkedin.svg"
-                  className="buddies-image5"
-                />
-              </a>
-              <a
-                href="https://www.discordapp.com/users/727073320557871137"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="buddies-discord2 social button"
-              >
-                <img
-                  alt="image"
-                  src="/Icons/discord.svg"
-                  className="buddies-image6"
-                />
-              </a>
-            </div>
-          </div>
-          <div className="buddies-links">
-            <div className="buddies-list">
-              <h3 className="buddies-heading4">Site</h3>
-              <div className="buddies-items">
-                <Link to="/" className="buddies-link10 button-clean button">
-                  Home
-                </Link>
-                <Link
-                  to="/projects-workings#top"
-                  className="buddies-link11 button-clean button"
-                >
-                  <span>
-                    <span>
-                      All
-                      <span
-                        dangerouslySetInnerHTML={{
-                          __html: ' ',
-                        }}
-                      />
-                    </span>
-                    <span>Projects</span>
-                  </span>
-                </Link>
-                <a href='https://blogs.asyncsunlight.me' 
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="buddies-link12 button-clean button">
-                    Blogs
-                </a>
-                <a href="#top" className="buddies-link13 button-clean button">
-                  To the Page Top
-                </a>
-              </div>
-            </div>
-            <div className="buddies-list1">
-              <h3 className="buddies-heading5">Connections</h3>
-              <div className="buddies-items1">
-                <a
-                  href="https://www.instagram.com/async_sunlight/"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="buddies-link14 button-clean button"
-                >
-                  Instagram
-                </a>
-                <a
-                  href="https://github.com/Su-nlight"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="buddies-link15 button-clean button"
-                >
-                  Github
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/async-sunlight/"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="buddies-link15 button-clean button"
-                >
-                  Linkedin
-                </a>
-                <a
-                  href="mailto:sumitsharmakaen@gmail.com?subject=Reaching out to you"
-                  className="buddies-link16 button-clean button"
-                >
-                  Email
-                </a>
-                <a
-                  href="https://www.discordapp.com/users/727073320557871137"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="buddies-link17 button-clean button"
-                >
-                  Discord
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="buddies-socials3">
-            <a
-              href="https://github.com/Su-nlight"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="buddies-github2 social button">
-                <svg viewBox="0 0 1024 1024" className="buddies-icon12">
-                  <path d="M512.008 12.642c-282.738 0-512.008 229.218-512.008 511.998 0 226.214 146.704 418.132 350.136 485.836 25.586 4.738 34.992-11.11 34.992-24.632 0-12.204-0.48-52.542-0.696-95.324-142.448 30.976-172.504-60.41-172.504-60.41-23.282-59.176-56.848-74.916-56.848-74.916-46.452-31.778 3.51-31.124 3.51-31.124 51.4 3.61 78.476 52.766 78.476 52.766 45.672 78.27 119.776 55.64 149.004 42.558 4.588-33.086 17.852-55.68 32.506-68.464-113.73-12.942-233.276-56.85-233.276-253.032 0-55.898 20.004-101.574 52.76-137.428-5.316-12.9-22.854-64.972 4.952-135.5 0 0 43.006-13.752 140.84 52.49 40.836-11.348 84.636-17.036 128.154-17.234 43.502 0.198 87.336 5.886 128.256 17.234 97.734-66.244 140.656-52.49 140.656-52.49 27.872 70.528 10.35 122.6 5.036 135.5 32.82 35.856 52.694 81.532 52.694 137.428 0 196.654-119.778 239.95-233.79 252.624 18.364 15.89 34.724 47.046 34.724 94.812 0 68.508-0.596 123.644-0.596 140.508 0 13.628 9.222 29.594 35.172 24.566 203.322-67.776 349.842-259.626 349.842-485.768 0-282.78-229.234-511.998-511.992-511.998z"></path>
-                </svg>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/async-sunlight/"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="home-twitter3 social button">
-              <img
-                alt="image"
-                src="/Icons/linkedin.svg"
-                className="home-image24"
-              />
-            </a>
-            <a
-              href="https://www.discordapp.com/users/727073320557871137"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="buddies-discord3 social button">
-              <img
-                alt="image"
-                src="/Icons/discord.svg"
-                className="buddies-image8"
-              />
-            </a>
-          </div>
-        </div>
-        <span className="buddies-copyright">
-          © 2025 Sumit Sharma (Async_Sunlight) . All Rights Reserved.
-        </span>
-      </footer>
+      
+      <Footer />
     </div>
   )
 }
